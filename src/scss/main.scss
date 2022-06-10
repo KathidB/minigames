@@ -4,31 +4,35 @@
   padding: 0;
 }
 
-.wrapper {
-  margin: 0 auto;
-  max-width: 1400px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.section {
-  margin: 200px 0px;
-  // height: auto;
-  width: 100%;
-}
+
 
 body {
   display: flex;
+  align-items: center;
   flex-direction: column;
-  height: 100vh;
+  justify-content: center;
+  // height: 100vh;
   font-family: "Plus Jakarta Sans", sans-serif;
   background: -webkit-linear-gradient(to bottom, #1d2671, #99445f);
   background-size: cover;
   color: white;
 }
+.wrapper {
+  margin: 0 auto;
+  max-width: 1400px;
+  width: 100%;
+}
+
+.section {
+  margin: 100px 0px;
+}
+
+.gtn-logo {
+  display: block;
+  margin: 0 auto;
+}
 h1 {
-  margin-top: 100px;
+  margin: 10px;
 }
 
 h1,
@@ -54,6 +58,7 @@ h2 {
   // justify-content: center;
   width: 500px;
   height: 320px;
+  margin-top: 30px;
   background-color: rgba(120, 48, 168, 0.219);
   border-radius: 8px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
