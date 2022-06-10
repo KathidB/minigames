@@ -10,7 +10,7 @@ let counter = 0;
 
 const checkTheNumber = () => {
   if (gtnInput.value < 0 || gtnInput.value > 100) {
-    gtnStatus.textContent = "Podaj liczbę z przedziału 1 do 100";
+    gtnStatus.textContent = "Podaj liczbę z przedziału 0 do 100";
     gtnStatus.style.color = "tomato";
   } else if (gtnInput.value.length === 0) {
     gtnStatus.textContent = "Musisz podać liczbę.";
@@ -39,8 +39,8 @@ const checkTheNumber = () => {
 
 btnCheck.addEventListener("click", checkTheNumber);
 
-
-
-
-
-
+gtnInput.addEventListener("keydown", function (e) {
+  if (e.code === "Enter") {
+    checkTheNumber();
+  }
+});

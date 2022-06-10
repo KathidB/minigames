@@ -21,56 +21,71 @@
 </head>
 
 <body>
-    <div class="todo">
-        <img class="dotoguy" src="./dist/img/todoguy.png" alt="to do guy">
-        <h1>TO DO LIST </h1>
-        <div class="header">
-            <input type="text" class="todo-input" placeholder="Wpisz treść zadania..." maxlength="45">
-            <button class="btn-add">Add</button>
-        </div>
-        <div class="todolist">
-            <h3>Lista zadań:</h3>
-            <p class="error-info"></p>
-            <ul>
-                <li>Wystawić ogłoszenie
-                    <div class="tools">
-                        <button class="complete"><i class="fas fa-check"></i></button><button
-                            class="edit">EDIT</button><button class="delete"><i class="fas fa-times"></i></button>
-                    </div>
-                </li>
-                <li>Przejrzeć CV
-                    <div class="tools">
-                        <button class="complete"><i class="fas fa-check"></i></button><button
-                            class="edit">EDIT</button><button class="delete"><i class="fas fa-times"></i></button>
-                    </div>
-                </li>
-                <li>Zatrudnić Front-End'a
-                    <div class="tools">
-                        <button class="complete"><i class="fas fa-check"></i></button><button
-                            class="edit">EDIT</button><button class="delete"><i class="fas fa-times"></i></button>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
 
-    <div class="popup">
-        <h3>Edytuj zadanie:</h3>
-        <div class="popup-body">
-            <p class="popup-info"></p>
-            <input type="text" class="popup-input" placeholder="Wprowadź nową treść zadania..." maxlength="45">
-            <button class="popup-btn accept">OK</button>
-            <button class="popup-btn cancel">Anuluj</button>
-        </div>
-    </div>
 
+
+    <h1>MINI GAMES</h1>
+
+
+    <section class="section">
+        <div class="wrapper">
+            <div class="gtn">
+                <h2>guess the number</h2>
+                <label class="gtn-label" for="gtn-input">Podaj liczbę od 0 do 100</label>
+                <div class="input-box">
+                    <input id="gtn-input" class="gtn-input" type="number" value="" min="1" max="100">
+                    <button class="btn-check">CHECK</button>
+                    <button class="btn-reset hide" onClick="window.location.reload();">RESET</button>
+                </div>
+                <div class="gtn-status-box">
+                    <p class="gtn-status">PODEJMIJ WYZWANIE</p>
+                    <p class="gtn-result"></p>
+                    <p class="gtn-moves"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rock, Paper, Scissors-->
+    <section class="section">
+        <div class="wrapper">
+            <div class="rps">
+                <h2>KAMIEŃ PAPIER NOŻYCE</h2>
+                <p>KLIKNIJ I GRAJ DO 10 PKT:</p>
+                <div class="rps-box">
+                    <button class="btn-rps-choice btn-rock"><img class="img img-rock" src="./dist/img/1.png"
+                            alt=""></button>
+                    <button class="btn-rps-choice btn-paper"><img class="img img-paper" src="./dist/img/2.png"
+                            alt=""></button>
+                    <button class="btn-rps-choice btn-scissors"><img class="img img-scissors" src="./dist/img/3.png"
+                            alt=""></button>
+                </div>
+                <div class="rps-status-box">
+                    <p class="gtn-yourpick">TWÓJ WYBÓR</p>
+
+                    <p class="gtn-computerpick">WYBÓR KOMPUTERA</p>
+                </div>
+                <div class="rps-choice-box">
+                    <img class="user-pick-img" src="" alt="">
+                    <p class="rps-user-points">0</p>
+                    <p class="rps-result">WYNIK</p>
+                    <p class="rps-computer-points">0</p>
+                    <img class="pc-pick-img" src="" alt="">
+
+                </div>
+                <p class="finalResults"></p>
+                <button class="btn-rps-reset hide">RESET</button>   
+            </div>
+        </div>
+    </section>
 
     <footer class="footer">
         <a target="_blank" href="https://kathidb.github.io/portfolio/">PORTFOLIO</a>
         <p>©2022 Kathid Web Design</p>
     </footer>
 
-    <script src="./dist/js/main.min.js"></script>
+    <script src="./dist/js/gtn.min.js"></script>
+    <script src="./dist/js/rps.min.js"></script>
 </body>
 
 </html>
