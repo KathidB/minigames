@@ -36,9 +36,10 @@ rpsChoices.forEach((e) => {
   });
 });
 
-const checkTheScore = () => {
+
   // funkcja dodaje odpowiedzni atrybut do wyboru komputera w celi
   // późniejszego jego porównania z wyborem gracza
+const checkTheScore = () => {
   const addDataToPcChoice = () => {
     if (computerPickImg.src.includes("1.png")) {
       computerPickImg.setAttribute("data-src", "rock");
@@ -49,8 +50,8 @@ const checkTheScore = () => {
     }
   };
   addDataToPcChoice();
-  // funkcja poruwnuje wybory gracza i komputera i ustala kto wygrał
 
+  // funkcja poruwnuje wybory gracza i komputera i ustala kto wygrał
   const checkWhoWon = () => {
     let checkUserData = userPickImg.getAttribute("data-src");
     let checkComputerData = computerPickImg.getAttribute("data-src");
@@ -77,6 +78,7 @@ const checkTheScore = () => {
   };
   checkWhoWon();
 };
+
 // funkcja wyłącza przyciski w momencie gdy jedna ze stron osiągnie
 // 10 ptk
 const userPointsCounter = () => {
