@@ -36,9 +36,8 @@ rpsChoices.forEach((e) => {
   });
 });
 
-
-  // funkcja dodaje odpowiedzni atrybut do wyboru komputera w celi
-  // późniejszego jego porównania z wyborem gracza
+// funkcja dodaje odpowiedzni atrybut do wyboru komputera w celi
+// późniejszego jego porównania z wyborem gracza
 const checkTheScore = () => {
   const addDataToPcChoice = () => {
     if (computerPickImg.src.includes("1.png")) {
@@ -83,12 +82,12 @@ const checkTheScore = () => {
 // 10 ptk
 const userPointsCounter = () => {
   if (uPoints >= 10) {
-    finalResults.textContent = "ZWYCIĘSTWO!";
+    finalResults.textContent = "ZWYCIĘSTWO!  ZAGRAJ PONOWNIE!";
     rpsResults.style.color = "lime";
     rpsBtnReset.classList.toggle("active");
     disableButtons();
   } else if (cPoints >= 10) {
-    finalResults.textContent = "PRZEGRANA!";
+    finalResults.textContent = "PRZEGRAŁEŚ! ZAGRAJ PONOWNIE!";
     rpsResults.style.color = "tomato";
     rpsBtnReset.classList.toggle("active");
     disableButtons();
