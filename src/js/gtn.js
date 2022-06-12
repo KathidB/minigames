@@ -5,13 +5,12 @@ const gtnStatus = document.querySelector(".gtn-status");
 const gtnResult = document.querySelector(".gtn-result");
 const gtnMoves = document.querySelector(".gtn-moves");
 let randomNumber;
+let counter = 0;
 
 const generateRandomNumber = () => {
   randomNumber = Number((Math.random() * 100).toFixed(0));
 };
 generateRandomNumber();
-
-let counter = 0;
 
 const checkTheNumber = () => {
   if (gtnInput.value < 0 || gtnInput.value > 100) {
@@ -35,12 +34,10 @@ const checkTheNumber = () => {
       gtnStatus.style.color = "white";
       gtnInput.value = "";
     } else {
-      counter;
       gtnStatus.textContent = "";
       gtnResult.textContent = `Zwycięstwo!`;
       gtnResult.style.color = "lime";
       gtnMoves.textContent = `Wykonano ${counter} ruchów.`;
-      btnCheck.disabled = true;
       btnCheck.classList.toggle("hide");
       btnReset.classList.toggle("active");
     }

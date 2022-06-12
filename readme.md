@@ -11,7 +11,7 @@ https://kathidb.github.io/minigames/
 
 ### Guess the number
 
-The function generates a random number between 0 and 100. The player's task is to guess what number it is. The player's moves are counted. After winning, a reset button appears, and you can start the game again. The function accepts only numbers. 
+The function generates a random number between 0 and 100. The player's task is to guess what number it is. The player's moves are counted. After winning, a reset button appears, and you can start the game again. The function accepts only numbers.
 
 ### Rock, paper and scissors
 
