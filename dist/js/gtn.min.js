@@ -24,13 +24,11 @@ const checkTheNumber = () => {
     counter++;
     gtnMoves.textContent = `${counter} ruch`;
     if (gtnInput.value > randomNumber) {
-      // gtnStatus.textContent = "Podano za duża liczbę.";
-
-      gtnStatus.textContent = `${gtnInput.value} - Podana liczba jest za duża.`;
+      gtnStatus.textContent = `${gtnInput.value} to za duża liczba.`;
       gtnStatus.style.color = "white";
       gtnInput.value = "";
     } else if (gtnInput.value < randomNumber) {
-      gtnStatus.textContent = `${gtnInput.value} - Podana liczba jest za mała.`;
+      gtnStatus.textContent = `${gtnInput.value} to za mała liczba.`;
       gtnStatus.style.color = "white";
       gtnInput.value = "";
     } else {
@@ -44,12 +42,6 @@ const checkTheNumber = () => {
   }
 };
 
-btnCheck.addEventListener("click", checkTheNumber);
-const enterKeyCheck = (e) => {
-  e.key === "Enter" ? checkTheNumber() : false;
-};
-gtnInput.addEventListener("keyup", enterKeyCheck);
-
 const restartTheGame = () => {
   gtnStatus.textContent = "";
   gtnMoves.textContent = "";
@@ -61,4 +53,10 @@ const restartTheGame = () => {
   generateRandomNumber();
 };
 
+const enterKeyCheck = (e) => {
+  e.key === "Enter" ? checkTheNumber() : false;
+};
+
+btnCheck.addEventListener("click", checkTheNumber);
+gtnInput.addEventListener("keyup", enterKeyCheck);
 btnReset.addEventListener("click", restartTheGame);
