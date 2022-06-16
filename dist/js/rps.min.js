@@ -78,8 +78,7 @@ const checkTheScore = () => {
   checkWhoWon();
 };
 
-// funkcja wyłącza przyciski w momencie gdy jedna ze stron osiągnie
-// 10 ptk
+
 const userPointsCounter = () => {
   if (uPoints >= 10) {
     finalResults.textContent = "ZWYCIĘSTWO!  ZAGRAJ PONOWNIE!";
