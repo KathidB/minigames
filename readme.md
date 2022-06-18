@@ -23,7 +23,3 @@ After selecting the indicated item, the function adds it to the selection box an
 <br> The player's choice is compared to the computer's choice, and a score is assigned based on that choice.
 <br> The game is played for up to 10 points. After one side has scored 10 points, a winner is determined, and the game can be reset.
 The JS file contains comments that briefly describe the functions it contains and how they work.
-
-## Info
-
-
