@@ -12,14 +12,13 @@ Guess the number to prosta gra, w której losowana jest liczba z przedziału od 
 
 https://kathidb.github.io/minigames/
 
+
 ### Mini Games
 
-The function generates a random number between 0 and 100. The player's task is to guess what number it is. <br>
-The player's moves are counted. After winning, a reset button appears, and you can start the game again. The function accepts only numbers.<br>
-Stone Paper and Scissors.<br>
-After selecting the indicated item, the function adds it to the selection box and automatically selects a random one for the computer.<br>
+The function generates a random number between 0 and 100. The player's task is to guess what number it is. <br> 
+The player's moves are counted. After winning, a reset button appears, and you can start the game again. The function accepts only numbers.<br> 
+Stone Paper and Scissors.<br> 
+After selecting the indicated item, the function adds it to the selection box and automatically selects a random one for the computer.<br> 
 <br> The player's choice is compared to the computer's choice, and a score is assigned based on that choice.
 <br> The game is played for up to 10 points. After one side has scored 10 points, a winner is determined, and the game can be reset.
 The JS file contains comments that briefly describe the functions it contains and how they work.
-
-## Info
