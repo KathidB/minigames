@@ -12,6 +12,8 @@ const scissors = "./dist/img/3.png";
 let uPoints = 0;
 let cPoints = 0;
 
+
+//Rock Paper Scissors | RPS
 //Zależnie od tego na jaki guzik klikniemy, taki zostanie dodany do
 // pola Twój wybór - a losowy zostanie przydzielony do pola komputera.
 rpsChoices.forEach((e) => {
@@ -110,7 +112,7 @@ rpsBtnReset.addEventListener("click", () => {
   rpsBtnReset.classList.add("hide");
 });
 
-// wyłączenie i włączenie buttonów po osiągnieciu 10 ptk
+// wyłączenie  buttonów po osiągnieciu 10 ptk
 const disableButtons = () => {
   rpsChoices.forEach((e) => {
     e.disabled = true;
