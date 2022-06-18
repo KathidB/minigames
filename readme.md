@@ -5,7 +5,7 @@ Mini Games to zestawienie dwóch prostych gier Guess the number oraz kamień, pa
 Guess the number to prosta gra, w której losowana jest liczba z przedziału od 0 do 100. Naszym zadaniem jest
 <br> zgadnać w jak najmniejszej ilości ruchów, jaka to liczba.
 <br> Gra upewnia się, że w okienku podajemy wyłącznie liczby i sa one z odpowiedniego przedziału.
-<br> Ruchy gracza są liczone i podawane są po w trakcie i na zakończenie gry.
+<br> Ruchy gracza są podliczane i podawane w trakcie i po zakończeniu gry.
 <br> Moje projekty ciągle udoskonalam. Strona nie jest responsywna.
 
 ## Live Version
