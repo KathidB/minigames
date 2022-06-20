@@ -7,6 +7,11 @@ Guess the number to prosta gra, w której losowana jest liczba z przedziału od 
 <br> Gra upewnia się, że w okienku podajemy wyłącznie liczby i sa one z odpowiedniego przedziału.
 <br> Ruchy gracza są podliczane i podawane w trakcie i po zakończeniu gry.
 
+Kamień, papier i nożyczki.
+<br>Po wybraniu wskazanego elementu funkcja dodaje go do pola wyboru i automatycznie wybiera losowy element dla komputera.
+ <br>Wybór dokonany przez gracza jest porównywany z wyborem komputera i na jego podstawie obliczany jest wynik.
+ <br>Gra toczy się do 10 punktów. Gdy jedna ze stron zdobędzie 10 punktów, zostaje wyłoniony zwycięzca, a gra może zostać zresetowana.
+<br> Plik JS zawiera komentarze, w których krótko opisano zawarte w nim funkcje oraz sposób ich działania.
 
 ## Live Version
 
