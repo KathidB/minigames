@@ -6,7 +6,7 @@ Guess the number to prosta gra, w której losowana jest liczba z przedziału od 
 <br> zgadnać w jak najmniejszej ilości ruchów, jaka to liczba.
 <br> Gra upewnia się, że w okienku podajemy wyłącznie liczby i sa one z odpowiedniego przedziału.
 <br> Ruchy gracza są podliczane i podawane w trakcie i po zakończeniu gry.
-<br> Moje projekty ciągle udoskonalam. Strona nie jest responsywna.
+
 
 ## Live Version
 
