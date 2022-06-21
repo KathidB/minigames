@@ -12,7 +12,6 @@ const scissors = "./dist/img/3.png";
 let uPoints = 0;
 let cPoints = 0;
 
-
 //Rock Paper Scissors | RPS
 //Zależnie od tego na jaki guzik klikniemy, taki zostanie dodany do
 // pola Twój wybór - a losowy zostanie przydzielony do pola komputera.
@@ -79,7 +78,6 @@ const checkTheScore = () => {
   };
   checkWhoWon();
 };
-
 
 const userPointsCounter = () => {
   if (uPoints >= 10) {
